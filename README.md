@@ -1,61 +1,83 @@
-# 📊 Data Science & Analytics Practice Lab
+# 🛡️ Security Data Science & Analytics Lab
 
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=matplotlib&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=postgresql&logoColor=white)
 
-![Notebooks](https://img.shields.io/badge/Analysis_Notebooks-7-blue?style=flat-square)
-![Datasets](https://img.shields.io/badge/Curated_Datasets-14-success?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Active_Research-yellow?style=flat-square)
+![Forensics](https://img.shields.io/badge/Focus-Digital_Forensics-red?style=for-the-badge)
 
-**Exploratory Data Analysis, Statistical Modeling, and MLOps Fundamentals**
+**Transforming raw infrastructure logs into actionable security intelligence.**
 
 </div>
 
 ---
 
-## 🎯 The Mission
+## 🎯 Mission Statement
 
-**"Turning raw infrastructure logs and business data into actionable security and operational intelligence."**
+**"To master the intersection of Data Science and Cybersecurity by building automated forensic pipelines and threat hunting models."**
 
-## 💡 Why This Exists
+This laboratory is a hands-on environment for developing the skills required to analyze large-scale security datasets, identify advanced persistent threat (APT) patterns, and automate incident response through data engineering.
 
-In modern DevSecOps, data is the primary fuel for detection and response. This repository serves as my laboratory for mastering the tools and techniques required to analyze large-scale datasets, identify anomalies, and build predictive models. From analyzing global internet usage patterns to performing morphological analysis on skeletal data, this lab focuses on the core discipline of **Exploratory Data Analysis (EDA)** and the transition into automated **MLOps** pipelines.
+---
 
-## 🗺️ Reorganization Logic
+## 🏗️ Lab Architecture
+
+The lab follows a professional **Ingest → Store → Analyze** pipeline:
+
+1.  **Ingest:** Raw security telemetry (PCAPs, Logs, Ciphertext) is provided in `.csv` format.
+2.  **Store:** Data is structured and stored in a **MySQL** relational database (`security_lab`).
+3.  **Analyze:** Jupyter Notebooks leverage `SQLAlchemy`, `Pandas`, and `Matplotlib` to perform deep forensic analysis and pattern discovery.
+
+---
+
+## 🗺️ Repository Structure
 
 ```text
 datascience-learning/
 ├── ds-practice/
-│   ├── data/           <-- Raw and processed CSV datasets
-│   ├── notebooks/      <-- Jupyter analysis and visualization
-│   └── sql/            <-- Relational data queries and schema
+│   ├── data/           <-- Raw security datasets (Logs, Flows, Ciphers)
+│   ├── notebooks/      <-- Professional forensic analysis labs
+│   └── sql/            <-- Database schema and initialization scripts
 └── README.md
 ```
 
-## 🛠️ Featured Projects
+---
+
+## 🛠️ Featured Security Missions
 
 ### 🚀 [50-Problem Data Science Bootcamp](./ds-practice/notebooks/world-connected-project.ipynb)
-**Level: Beginner to Intermediate**  
-A comprehensive "Zero to Hero" drill covering the entire data lifecycle. From basic Python variables to cleaning messy industry datasets (mixed units, outliers, and duplicates).
+**Level: Beginner**  
+A high-intensity drill covering the fundamentals of data cleaning and standardization. Solve 50 progressive problems using "messy" industry datasets containing unit inconsistencies and statistical outliers.
 
-### 💀 [Forensic Anthropology & SQL Challenge](./ds-practice/notebooks/skeletal_variation.ipynb)
+### 💀 [Forensic Anthropology SQL Challenge](./ds-practice/notebooks/skeletal_variation.ipynb)
 **Level: Intermediate**  
-A real-world simulation using skeletal measurements to identify biological traits. This project bridges the gap between CSV files and relational databases using **MySQL**.
+Perform biological trait identification using skeletal measurements. This project bridges the gap between flat files and relational databases using **MySQL**.
+
+### 🔐 [Cryptography Frequency Analysis](./ds-practice/notebooks/cryptography_frequency_analysis.ipynb)
+**Level: Advanced**  
+Intercept and decrypt threat actor messages. Use statistical frequency distribution analysis to crack Caesar ciphers and log the decrypted evidence back to MySQL.
+
+### 📡 [Network Traffic & C2 Discovery](./ds-practice/notebooks/network_traffic_analysis.ipynb)
+**Level: Advanced**  
+Hunt for Command & Control (C2) heartbeats. Analyze Netflow timing patterns to differentiate between human-burst traffic and automated malware beaconing.
+
+### 🔍 [SIEM Threat Hunting](./ds-practice/notebooks/siem_threat_hunting.ipynb)
+**Level: Expert**  
+Act as a SOC Analyst. Perform complex SQL joins across authentication and process logs to identify lateral movement and "Living off the Land" (LotL) attacks.
+
+---
 
 ## ⚙️ Lab Setup & Data Ingestion
 
-This laboratory is designed to use **MySQL** as the primary data engine. Before attempting the analysis notebooks, you must ingest the raw data provided in `ds-practice/data/`.
+This laboratory requires a local **MySQL** instance. Before beginning the analysis notebooks, you must ingest the raw telemetry data.
 
-**Your Task:**
-Create a database named `security_lab` and load the following files into their respective tables. You are responsible for determining the most efficient ingestion method (e.g., SQL LOAD DATA, GUI Import, or Python-based Ingestion).
-
-| Project | Required Table | Source CSV |
+| Security Mission | Target MySQL Table | Source Dataset |
 | :--- | :--- | :--- |
 | **Cryptography** | `encrypted_messages` | `encrypted_messages.csv` |
 | **Network Analysis** | `network_flows` | `network_flows.csv` |
@@ -64,41 +86,20 @@ Create a database named `security_lab` and load the following files into their r
 
 ---
 
-## 🛠️ What It Does
-
-This lab covers a diverse range of analytical domains using the Python data stack:
-
-*   **Industry Data Cleaning:** Standardizing messy "real-world" datasets with mixed units (mph/kmh), inconsistent strings, and statistical outliers.
-*   **SQL for Data Science:** Moving beyond flat files to query relational databases directly for analysis.
-*   **Exploratory Data Analysis (EDA):** Leveraging `Pandas` and `NumPy` to clean, transform, and aggregate complex datasets such as global internet connectivity and demographic trends.
-*   **Data Visualization:** Utilizing `Matplotlib` to create high-signal visual representations of data, including specialized projects like the Mondrian Art analysis.
-*   **Statistical Modeling:** Applying mathematical principles to datasets like `skeletal_variation` to identify patterns and outliers.
-
-## 📈 Business Impact
-
-*   **Informed Decision Making:** Provides the methodology to move from "gut feeling" to data-backed evidence for infrastructure scaling and security posture.
-*   **Anomaly Detection:** Develops the skills necessary to identify statistical outliers in logs that represent 0-day attacks or system failures.
-*   **Automation Readiness:** Prepares data for MLOps pipelines, reducing the time from data ingestion to model deployment by ensuring clean, structured inputs.
-
 ## 🎓 Skills Demonstrated
 
-*   **Data Engineering:** Reorganizing and structuring multi-source datasets for high-performance analysis.
-*   **Statistical Analysis:** Correlation, distribution analysis, and trend forecasting.
-*   **Visualization:** Communicating complex technical findings through clear, scannable charts and graphs.
-*   **SQL/NoSQL Proficiency:** Bridging the gap between raw data storage and analytical interfaces.
-
-## ⚠️ Honest Limitations
-
-*   **Data Volume:** Currently optimized for small-to-medium datasets (CSV-based) rather than Big Data frameworks (Spark/Hadoop).
-*   **Model Depth:** Focuses primarily on EDA and statistical fundamentals; deep learning (TensorFlow/PyTorch) implementations are pending.
-*   **Clean Room Isolation:** Notebooks are designed for local execution and require manual environment setup (Conda/Pip).
+*   **Security Data Engineering:** Designing schemas for high-volume security logs and automating ingestion.
+*   **Digital Forensics:** Performing bit-level analysis (LSB Steganography) and cryptographic cracking.
+*   **Threat Hunting:** Using statistical anomalies (Standard Deviation, Frequency) to detect intruders.
+*   **Relational Analysis:** Correlating multi-source logs through advanced SQL Joins.
 
 ---
 
 <div align="center">
 
-**"Without data, you're just another person with an opinion."**
+**"Data is the new perimeter. Learn to defend it."**
 
+![Status](https://img.shields.io/badge/Lab_Status-Active_Research-success?style=flat-square)
 ![Last Updated](https://img.shields.io/badge/Last_Updated-February_2026-lightgrey?style=flat-square)
 
 </div>
