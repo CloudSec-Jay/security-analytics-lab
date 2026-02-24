@@ -1,0 +1,16 @@
+Animal,Class,Speed,Unit
+Cheetah,Mammal,120,km/h
+Peregrine Falcon,Bird,389,km/h
+Cheetah,Mammal,120,km/h
+Sailfish,Fish,68,mph
+Black Marlin,Fish,,mph
+Pronghorn,Mammal,88.5,km/h
+Springbok,Mammal,55,mph
+Cheetah,Mammal,75,mph
+Golden Eagle,Bird,320,km/h
+Peregrine Falcon,Bird,240,mph
+Common Swift,Bird,111.6,km/h
+Greyhound,Mammal,45,
+Unknown,Mammal,10,km/h
+Ostrich,Bird,70,km/h
+Quarter Horse,Mammal,47.5,mph

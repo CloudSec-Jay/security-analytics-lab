@@ -1,0 +1,7 @@
+message_id,ciphertext,encryption_type
+1,WKLV LV D VHFUHW PHVVDJH,Caesar
+2,PB PVYV JHU IL ISVJR LK,Caesar
+3,SGXRG HR HR SGHXRG HR SGXRG,Substitution
+4,YOLP PZ H AOLZA VM AOL ZLST,Substitution
+5,A B C D E F G H I J K L M N O P Q R S T U V W X Y Z,Alphabet
+6,PB PVYV JHU IL ISVJR LK,Caesar

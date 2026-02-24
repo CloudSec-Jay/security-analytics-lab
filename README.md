@@ -38,14 +38,41 @@ datascience-learning/
 └── README.md
 ```
 
+## 🛠️ Featured Projects
+
+### 🚀 [50-Problem Data Science Bootcamp](./ds-practice/notebooks/world-connected-project.ipynb)
+**Level: Beginner to Intermediate**  
+A comprehensive "Zero to Hero" drill covering the entire data lifecycle. From basic Python variables to cleaning messy industry datasets (mixed units, outliers, and duplicates).
+
+### 💀 [Forensic Anthropology & SQL Challenge](./ds-practice/notebooks/skeletal_variation.ipynb)
+**Level: Intermediate**  
+A real-world simulation using skeletal measurements to identify biological traits. This project bridges the gap between CSV files and relational databases using **MySQL**.
+
+## ⚙️ Lab Setup & Data Ingestion
+
+This laboratory is designed to use **MySQL** as the primary data engine. Before attempting the analysis notebooks, you must ingest the raw data provided in `ds-practice/data/`.
+
+**Your Task:**
+Create a database named `security_lab` and load the following files into their respective tables. You are responsible for determining the most efficient ingestion method (e.g., SQL LOAD DATA, GUI Import, or Python-based Ingestion).
+
+| Project | Required Table | Source CSV |
+| :--- | :--- | :--- |
+| **Cryptography** | `encrypted_messages` | `encrypted_messages.csv` |
+| **Network Analysis** | `network_flows` | `network_flows.csv` |
+| **Log Analysis** | `web_server_logs` | `web_server_logs.csv` |
+| **Forensics** | `skeletons` | `adult-human-skeleton.csv` |
+
+---
+
 ## 🛠️ What It Does
 
 This lab covers a diverse range of analytical domains using the Python data stack:
 
+*   **Industry Data Cleaning:** Standardizing messy "real-world" datasets with mixed units (mph/kmh), inconsistent strings, and statistical outliers.
+*   **SQL for Data Science:** Moving beyond flat files to query relational databases directly for analysis.
 *   **Exploratory Data Analysis (EDA):** Leveraging `Pandas` and `NumPy` to clean, transform, and aggregate complex datasets such as global internet connectivity and demographic trends.
 *   **Data Visualization:** Utilizing `Matplotlib` to create high-signal visual representations of data, including specialized projects like the Mondrian Art analysis.
 *   **Statistical Modeling:** Applying mathematical principles to datasets like `skeletal_variation` to identify patterns and outliers.
-*   **Relational Database Queries:** Using `SQL` to interface with structured data, simulating the backend of production analytical platforms.
 
 ## 📈 Business Impact
 
@@ -65,12 +92,6 @@ This lab covers a diverse range of analytical domains using the Python data stac
 *   **Data Volume:** Currently optimized for small-to-medium datasets (CSV-based) rather than Big Data frameworks (Spark/Hadoop).
 *   **Model Depth:** Focuses primarily on EDA and statistical fundamentals; deep learning (TensorFlow/PyTorch) implementations are pending.
 *   **Clean Room Isolation:** Notebooks are designed for local execution and require manual environment setup (Conda/Pip).
-
-## 🛣️ Roadmap
-
-- [ ] **Scikit-Learn Integration:** Implement baseline classification models for the `adult-human-skeleton` dataset.
-- [ ] **Dashboarding:** Transition static visualizations into interactive `Streamlit` or `Plotly` dashboards.
-- [ ] **Containerized Analysis:** Create Dockerized environments for reproducible notebook execution.
 
 ---
 
