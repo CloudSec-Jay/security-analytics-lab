@@ -40,10 +40,12 @@ The lab follows a professional **Ingest → Store → Analyze** pipeline:
 
 ```text
 datascience-learning/
-├── ds-practice/
-│   ├── data/           <-- Raw security datasets (Logs, Flows, Ciphers)
-│   ├── notebooks/      <-- Professional forensic analysis labs
-│   └── sql/            <-- Database schema and initialization scripts
+├── ds-practice/        <-- General DS foundations (Cleaning, SQL, Stats)
+│   ├── data/           <-- Raw datasets (Logs, Flows, Human Traits)
+│   ├── notebooks/      <-- Fundamental skill-building labs
+│   └── sql/            <-- Database schema scripts
+├── security-analytics/ <-- Applied Security tracks
+│   └── notebooks/      <-- Professional forensic & threat hunting labs
 └── README.md
 ```
 
@@ -59,15 +61,20 @@ A high-intensity drill covering the fundamentals of data cleaning and standardiz
 **Level: Intermediate**  
 Perform biological trait identification using skeletal measurements. This project bridges the gap between flat files and relational databases using **MySQL**.
 
-### 🔐 [Cryptography Frequency Analysis](./ds-practice/notebooks/cryptography_frequency_analysis.ipynb)
+### 🔐 [Cryptography Frequency Analysis](./security-analytics/notebooks/cryptography_frequency_analysis.ipynb)
 **Level: Advanced**  
 Intercept and decrypt threat actor messages. Use statistical frequency distribution analysis to crack Caesar ciphers and log the decrypted evidence back to MySQL.
 
-### 📡 [Network Traffic & C2 Discovery](./ds-practice/notebooks/network_traffic_analysis.ipynb)
+### 🖼️ [Image Steganography Forensics](./security-analytics/notebooks/image_steganography_forensics.ipynb)
+**Level: Advanced**  
+Detect hidden data within digital imagery. Use Python to perform Least Significant Bit (LSB) analysis and extract embedded payloads from "carrier" images.
+
+### 📡 [Network Traffic & C2 Discovery](./security-analytics/notebooks/network_traffic_analysis.ipynb)
 **Level: Advanced**  
 Hunt for Command & Control (C2) heartbeats. Analyze Netflow timing patterns to differentiate between human-burst traffic and automated malware beaconing.
 
-### 🔍 [SIEM Threat Hunting](./ds-practice/notebooks/siem_threat_hunting.ipynb)
+### 🔍 [SIEM Threat Hunting](./security-analytics/notebooks/siem_threat_hunting.ipynb)
+
 **Level: Expert**  
 Act as a SOC Analyst. Perform complex SQL joins across authentication and process logs to identify lateral movement and "Living off the Land" (LotL) attacks.
 
