@@ -106,11 +106,12 @@ You have fundamentals covered. Here's a logical progression that also builds por
 
 | Stage | Focus | Why |
 |-------|-------|-----|
-| **Now** | Complete and clean up existing notebooks | Unfinished notebooks with no output don't show skill |
-| **Next** | Add a full EDA (Exploratory Data Analysis) notebook on a real dataset | EDA is the most common real DS task — shows you can ask questions of data |
+| **Done** | Foundational Data Science Bootcamp (50 Problems) | Cleaned messy datasets and mastered pandas basics |
+| **Done** | Intermediate Security Analytics Bootcamp (50 Problems) | Bridging DS fundamentals into Log Forensics and C2 Detection |
+| **Now** | **Math Foundation for Security Analytics** | 📐 Mastering the math (Entropy, χ², IC) before the Expert Missions |
+| **Next** | SIEM Threat Hunting & Lateral Movement | Moving into Expert-level MySQL-backed SOC analysis |
 | **Then** | Visualization project — tell a story with a chart series | Communication is half of data science |
 | **Later** | Intro to statistics in Python (distributions, correlation, hypothesis testing) | Required foundation before ML |
-| **Future** | If security focus develops — log analysis, anomaly detection with pandas | Natural bridge to your other repos |
 
 ---
 
